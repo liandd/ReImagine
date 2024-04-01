@@ -7,9 +7,9 @@ int main(){
     while(t--){
         scanf("%lld",&s);
         if(s > 0){
-            paginas = (- 1 + (long long int) sqrt (1 + 8 * s) ) / 2;
+            paginas = (- 1 + (long long int) sqrt (1 + 8 * s) ) >> 1;
             paginas++;
-            gauss = (paginas * (paginas + 1)) / 2;
+            gauss = (paginas * (paginas + 1)) >> 1;
             printf("%lld %lld\n",gauss - s, paginas);
         }
     }
