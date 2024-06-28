@@ -15,6 +15,11 @@ int main() {
   head->sig = q;
   q->sig = (struct node *)malloc(sizeof(struct node));
   q->sig->key = 3;
+<<<<<<< HEAD
   printf("%d %d %d\n", head->key, head->sig->key, head->sig->sig->key);
+=======
+  q->sig->sig = NULL;
+  printf("%d -> %d -> %d\n", head->key, head->sig->key, head->sig->sig->key);
+>>>>>>> 37bb1d450fea3bb94edaf3a78eac13750159fedb
   return 0;
 }

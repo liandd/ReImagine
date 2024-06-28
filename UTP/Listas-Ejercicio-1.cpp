@@ -19,6 +19,7 @@ struct node *makeLinkedList(int n) {
   return head;
 }
 
+<<<<<<< HEAD
 void printLinkedList(struct node *head) {
   struct node *actualNode;
   actualNode = head;
@@ -50,3 +51,6 @@ int main() {
   }
   return 0;
 }
+=======
+int main() {}
+>>>>>>> 37bb1d450fea3bb94edaf3a78eac13750159fedb
